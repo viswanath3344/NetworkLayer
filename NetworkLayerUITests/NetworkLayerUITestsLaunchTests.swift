@@ -2,7 +2,7 @@
 //  NetworkLayerUITestsLaunchTests.swift
 //  NetworkLayerUITests
 //
-//  Created by Ponthota, Viswanath Reddy (Cognizant) on 01/08/24.
+//  Created by Ponthota, Viswanath Reddy on 01/08/24.
 //
 
 import XCTest

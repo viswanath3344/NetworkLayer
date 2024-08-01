@@ -14,6 +14,12 @@
 		3F33EEF52C5B43F5007A81CC /* NetworkLayerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F33EEF42C5B43F5007A81CC /* NetworkLayerTests.swift */; };
 		3F33EEFF2C5B43F5007A81CC /* NetworkLayerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F33EEFE2C5B43F5007A81CC /* NetworkLayerUITests.swift */; };
 		3F33EF012C5B43F5007A81CC /* NetworkLayerUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F33EF002C5B43F5007A81CC /* NetworkLayerUITestsLaunchTests.swift */; };
+		3F33EF0F2C5B4524007A81CC /* Product.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F33EF0E2C5B4524007A81CC /* Product.swift */; };
+		3F33EF112C5B4739007A81CC /* APIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F33EF102C5B4739007A81CC /* APIClient.swift */; };
+		3F33EF132C5B8491007A81CC /* ProductListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F33EF122C5B8491007A81CC /* ProductListViewModel.swift */; };
+		3F33EF152C5B8566007A81CC /* ProductListRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F33EF142C5B8566007A81CC /* ProductListRepository.swift */; };
+		3F33EF172C5B85AC007A81CC /* AppError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F33EF162C5B85AC007A81CC /* AppError.swift */; };
+		3F33EF192C5B85E3007A81CC /* GenericMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F33EF182C5B85E3007A81CC /* GenericMapper.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +50,12 @@
 		3F33EEFA2C5B43F5007A81CC /* NetworkLayerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NetworkLayerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		3F33EEFE2C5B43F5007A81CC /* NetworkLayerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkLayerUITests.swift; sourceTree = "<group>"; };
 		3F33EF002C5B43F5007A81CC /* NetworkLayerUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkLayerUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		3F33EF0E2C5B4524007A81CC /* Product.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Product.swift; sourceTree = "<group>"; };
+		3F33EF102C5B4739007A81CC /* APIClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIClient.swift; sourceTree = "<group>"; };
+		3F33EF122C5B8491007A81CC /* ProductListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductListViewModel.swift; sourceTree = "<group>"; };
+		3F33EF142C5B8566007A81CC /* ProductListRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductListRepository.swift; sourceTree = "<group>"; };
+		3F33EF162C5B85AC007A81CC /* AppError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppError.swift; sourceTree = "<group>"; };
+		3F33EF182C5B85E3007A81CC /* GenericMapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenericMapper.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,10 +106,16 @@
 		3F33EEE22C5B43F2007A81CC /* NetworkLayer */ = {
 			isa = PBXGroup;
 			children = (
+				3F33EF0D2C5B4516007A81CC /* Model */,
 				3F33EEE32C5B43F2007A81CC /* NetworkLayerApp.swift */,
 				3F33EEE52C5B43F2007A81CC /* ContentView.swift */,
 				3F33EEE72C5B43F5007A81CC /* Assets.xcassets */,
 				3F33EEE92C5B43F5007A81CC /* Preview Content */,
+				3F33EF102C5B4739007A81CC /* APIClient.swift */,
+				3F33EF182C5B85E3007A81CC /* GenericMapper.swift */,
+				3F33EF122C5B8491007A81CC /* ProductListViewModel.swift */,
+				3F33EF142C5B8566007A81CC /* ProductListRepository.swift */,
+				3F33EF162C5B85AC007A81CC /* AppError.swift */,
 			);
 			path = NetworkLayer;
 			sourceTree = "<group>";
@@ -125,6 +143,14 @@
 				3F33EF002C5B43F5007A81CC /* NetworkLayerUITestsLaunchTests.swift */,
 			);
 			path = NetworkLayerUITests;
+			sourceTree = "<group>";
+		};
+		3F33EF0D2C5B4516007A81CC /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				3F33EF0E2C5B4524007A81CC /* Product.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -257,8 +283,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3F33EF112C5B4739007A81CC /* APIClient.swift in Sources */,
+				3F33EF132C5B8491007A81CC /* ProductListViewModel.swift in Sources */,
 				3F33EEE62C5B43F2007A81CC /* ContentView.swift in Sources */,
+				3F33EF152C5B8566007A81CC /* ProductListRepository.swift in Sources */,
 				3F33EEE42C5B43F2007A81CC /* NetworkLayerApp.swift in Sources */,
+				3F33EF0F2C5B4524007A81CC /* Product.swift in Sources */,
+				3F33EF192C5B85E3007A81CC /* GenericMapper.swift in Sources */,
+				3F33EF172C5B85AC007A81CC /* AppError.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
