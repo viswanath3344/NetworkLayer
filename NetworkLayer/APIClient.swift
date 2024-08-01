@@ -44,3 +44,21 @@ class AuthenticatorClient: HTTPClient {
         return try await client.data(request: request)
     }
 }
+
+
+// Decorator Pattern / Proxy ..
+class AnotherAuthenticatorClient: HTTPClient {
+    let client: HTTPClient
+    let apiKey: String
+    
+    init(client: HTTPClient, apiKey: String) {
+        self.client = client
+        self.apiKey = apiKey
+    }
+    
+    func data(request: URLRequest) async throws -> (Data, HTTPURLResponse) {
+        var singedRequest = request
+        singedRequest.setValue(apiKey, forHTTPHeaderField: "APIKEY")
+        return try await client.data(request: request)
+    }
+}
